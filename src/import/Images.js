@@ -14,7 +14,9 @@ import Designing_interfaces_using_Tailwind_CSS from "../assets/images/courses/De
 import Building_interactive_applications_with_React from "../assets/images/courses/Building_interactive_applications_with_React.webp";
 import State_of_the_art_in_React_using_Context_API_and_Redux from "../assets/images/courses/State_of_the_art_in_React_using_Context_API_and_Redux.jpg";
 import Develop_advanced_websites_with_Next from "../assets/images/courses/Develop_advanced_websites_with_Next.jpg";
+import Advanced_JavaScript_and_DOM from "../assets/images/courses/Advanced_JavaScript_and_DOM.jpg";
 import Improving_User_Experience_with_Framer_Motion from "../assets/images/courses/Improving_User_Experience_with_Framer_Motion.jpg";
+import Project_Deployment_and_Preparation from "../assets/images/courses/Project_Deployment_and_Preparation.jpg";
 import Introduction_to_Backend_Programming from "../assets/images/courses/Introduction_to_Backend_Programming.webp";
 import Nodejs_and_Express_Basics from "../assets/images/courses/Nodejs_and_Express_Basics.webp";
 import Database_and_SQL_Concepts from "../assets/images/courses/Database_and_SQL_Concepts.webp";
@@ -31,6 +33,8 @@ export const CoursesImage = {
     Building_interactive_applications_with_React,
     State_of_the_art_in_React_using_Context_API_and_Redux,
     Develop_advanced_websites_with_Next,
+    Advanced_JavaScript_and_DOM,
+    Project_Deployment_and_Preparation,
     Improving_User_Experience_with_Framer_Motion,
     Introduction_to_Backend_Programming,
     Nodejs_and_Express_Basics,
