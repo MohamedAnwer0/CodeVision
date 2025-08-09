@@ -1,0 +1,687 @@
+[
+    {
+        "id": 1,
+        "author": "Hassan Nabil",
+        "timestamp": "2025-08-07T11:35:58.853686Z",
+        "content": "كيف أستخدم useEffect مع fetch API في React؟",
+        "likes": 17,
+        "comments": [
+            {
+                "author": "Omar Khaled",
+                "timestamp": "2025-08-05T12:02:58.853686Z",
+                "content": "استخدم AbortController لإلغاء الطلب إذا تم إلغاء المكون."
+            },
+            {
+                "author": "Ali Hamdy",
+                "timestamp": "2025-08-07T13:03:58.853686Z",
+                "content": "تذكر إضافة dependencies في المصفوفة الثانية من useEffect."
+            },
+            {
+                "author": "Mohamed Saber",
+                "timestamp": "2025-08-04T16:51:58.853686Z",
+                "content": "تأكد من وضع fetch داخل useEffect ولفها بدالة async."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "author": "Khaled Fathy",
+        "timestamp": "2025-08-07T08:35:58.853686Z",
+        "content": "ما الفرق بين props و state في React؟",
+        "likes": 16,
+        "comments": [
+            {
+                "author": "Ali Hamdy",
+                "timestamp": "2025-08-06T18:26:58.853686Z",
+                "content": "props بتيجي من خارج المكون أما state فهي داخلية."
+            },
+            {
+                "author": "Omar Khaled",
+                "timestamp": "2025-08-07T02:28:58.853686Z",
+                "content": "الفرق الأساسي هو من يتحكم في البيانات."
+            },
+            {
+                "author": "Hassan Nabil",
+                "timestamp": "2025-08-04T19:51:58.853686Z",
+                "content": "state ممكن تتغير بـ setState لكن props لا."
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "author": "Ahmed Youssef",
+        "timestamp": "2025-08-07T05:35:58.853686Z",
+        "content": "ما الفرق بين let و var في JavaScript؟",
+        "likes": 12,
+        "comments": [
+            {
+                "author": "Mona Adel",
+                "timestamp": "2025-08-04T11:40:58.853686Z",
+                "content": "var بيتم hoist لها لكن let لا."
+            },
+            {
+                "author": "Salma Hassan",
+                "timestamp": "2025-08-04T14:07:58.853686Z",
+                "content": "let محصورة في البلوك، أما var فمتاحة في كل الـ function."
+            },
+            {
+                "author": "Hassan Nabil",
+                "timestamp": "2025-08-04T05:37:58.853686Z",
+                "content": "استخدم let لتفادي الأخطاء المرتبطة بـ var."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "author": "Khaled Fathy",
+        "timestamp": "2025-08-07T02:35:58.853686Z",
+        "content": "هل يمكن استخدام async/await داخل forEach؟",
+        "likes": 34,
+        "comments": [
+            {
+                "author": "Khaled Fathy",
+                "timestamp": "2025-08-04T17:50:58.853686Z",
+                "content": "الحل الأفضل هو for..of لو عايز await تشتغل."
+            },
+            {
+                "author": "Salma Hassan",
+                "timestamp": "2025-08-05T19:27:58.853686Z",
+                "content": "forEach لا تنتظر async، استخدم for..of."
+            },
+            {
+                "author": "Nour Gamal",
+                "timestamp": "2025-08-06T19:42:58.853686Z",
+                "content": "جرب map مع Promise.all كبديل."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "author": "Salma Hassan",
+        "timestamp": "2025-08-06T23:35:58.853686Z",
+        "content": "ما هي فائدة useMemo في React؟",
+        "likes": 18,
+        "comments": [
+            {
+                "author": "Mona Adel",
+                "timestamp": "2025-08-04T12:27:58.853686Z",
+                "content": "يساعد على تحسين الأداء إذا كان فيه عمليات حسابية."
+            },
+            {
+                "author": "Hassan Nabil",
+                "timestamp": "2025-08-05T17:01:58.853686Z",
+                "content": "يستخدم لحفظ نتيجة العمليات المكلفة."
+            },
+            {
+                "author": "Omar Khaled",
+                "timestamp": "2025-08-06T03:46:58.853686Z",
+                "content": "لازم تحدد dependencies صح عشان يشتغل تمام."
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "author": "Ahmed Youssef",
+        "timestamp": "2025-08-06T20:35:58.853686Z",
+        "content": "متى أستخدم useRef بدل useState؟",
+        "likes": 40,
+        "comments": [
+            {
+                "author": "Yara Mostafa",
+                "timestamp": "2025-08-05T11:35:58.853686Z",
+                "content": "استخدم useRef لو مش عايز الـ re-render يحصل."
+            },
+            {
+                "author": "Salma Hassan",
+                "timestamp": "2025-08-04T15:41:58.853686Z",
+                "content": "state تسبب re-render لكن ref لا."
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "author": "Ahmed Youssef",
+        "timestamp": "2025-08-06T17:35:58.853686Z",
+        "content": "ما هو الفرق بين map و forEach؟",
+        "likes": 41,
+        "comments": [
+            {
+                "author": "Nour Gamal",
+                "timestamp": "2025-08-05T14:32:58.853686Z",
+                "content": "استخدم map لو عايز تحول العناصر."
+            },
+            {
+                "author": "Mohamed Saber",
+                "timestamp": "2025-08-07T04:35:58.853686Z",
+                "content": "forEach أفضل لو بس عايز تنفذ أكشن بدون ترجيع."
+            },
+            {
+                "author": "Ahmed Youssef",
+                "timestamp": "2025-08-04T20:06:58.853686Z",
+                "content": "map بيرجع مصفوفة جديدة، forEach لا ترجع."
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "author": "Nour Gamal",
+        "timestamp": "2025-08-06T14:35:58.853686Z",
+        "content": "ما المقصود بـ closure في JavaScript؟",
+        "likes": 6,
+        "comments": [
+            {
+                "author": "Salma Hassan",
+                "timestamp": "2025-08-05T08:43:58.853686Z",
+                "content": "closure يعني الدالة بتحتفظ بالـ scope اللي اتولدت فيه."
+            },
+            {
+                "author": "Yara Mostafa",
+                "timestamp": "2025-08-04T05:53:58.853686Z",
+                "content": "مفيد في إنشاء دوال خاصة أو مؤقتة."
+            },
+            {
+                "author": "Fatma Adel",
+                "timestamp": "2025-08-05T15:37:58.853686Z",
+                "content": "يسمح للدالة بالوصول لمتغيرات خارجها."
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "author": "Ali Hamdy",
+        "timestamp": "2025-08-06T11:35:58.853686Z",
+        "content": "كيف تعمل الــ Event Loop في JavaScript؟",
+        "likes": 22,
+        "comments": [
+            {
+                "author": "Laila Tarek",
+                "timestamp": "2025-08-06T08:39:58.853686Z",
+                "content": "افهم الـ call stack وtask queue عشان تستوعبها."
+            },
+            {
+                "author": "Salma Hassan",
+                "timestamp": "2025-08-05T08:23:58.853686Z",
+                "content": "بيتحكم في الـ callbacks والـ promises."
+            },
+            {
+                "author": "Salma Hassan",
+                "timestamp": "2025-08-04T19:14:58.853686Z",
+                "content": "هو المسؤول عن ترتيب تنفيذ الكود في JavaScript."
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "author": "Mona Adel",
+        "timestamp": "2025-08-06T08:35:58.853686Z",
+        "content": "ما هي ف",
+        "likes": 29,
+        "comments": [
+            {
+                "author": "Omar Khaled",
+                "timestamp": "2025-08-06T19:11:58.853686Z",
+                "content": "يساعد في تقليل الأخطاء وقت التطوير."
+            },
+            {
+                "author": "Omar Khaled",
+                "timestamp": "2025-08-06T16:11:58.853686Z",
+                "content": "يوفر typing قوي وفهم أوضح للكود."
+            },
+            {
+                "author": "Omar Khaled",
+                "timestamp": "2025-08-05T10:50:58.853686Z",
+                "content": "يساعد في التنبؤ بالأخطاء قبل التشغيل."
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "author": "Hassan Nabil",
+        "timestamp": "2025-08-06T05:35:58.853686Z",
+        "content": "كيف يمكنني تحسين أداء تطبيق React؟",
+        "likes": 27,
+        "comments": [
+            {
+                "author": "Fatma Adel",
+                "timestamp": "2025-08-07T05:41:58.853686Z",
+                "content": "فيه فرق بسيط لازم ناخد بالنا منه."
+            },
+            {
+                "author": "Ali Hamdy",
+                "timestamp": "2025-08-04T21:54:58.853686Z",
+                "content": "اتفق معك في النقطة دي."
+            },
+            {
+                "author": "Mona Adel",
+                "timestamp": "2025-08-05T03:54:58.853686Z",
+                "content": "شرح رائع، شكرًا!"
+            },
+            {
+                "author": "Hassan Nabil",
+                "timestamp": "2025-08-07T12:11:58.853686Z",
+                "content": "جربت هذا واشتغل تمام."
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "author": "Mohamed Saber",
+        "timestamp": "2025-08-06T02:35:58.853686Z",
+        "content": "ما الفرق بين == و === في JavaScript؟",
+        "likes": 13,
+        "comments": [
+            {
+                "author": "Mohamed Saber",
+                "timestamp": "2025-08-07T02:42:58.853686Z",
+                "content": "== ممكن يعطي نتائج غير متوقعة أحيانًا."
+            },
+            {
+                "author": "Nour Gamal",
+                "timestamp": "2025-08-06T06:53:58.853686Z",
+                "content": "استخدم === لتفادي التحويل التلقائي."
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "author": "Mohamed Saber",
+        "timestamp": "2025-08-05T23:35:58.853686Z",
+        "content": "متى أستخدم try/catch مع fetch؟",
+        "likes": 20,
+        "comments": [
+            {
+                "author": "Salma Hassan",
+                "timestamp": "2025-08-06T07:34:58.853686Z",
+                "content": "نعم، استخدم try/catch لالتقاط أخطاء الشبكة."
+            },
+            {
+                "author": "Fatma Adel",
+                "timestamp": "2025-08-06T06:13:58.853686Z",
+                "content": "تحقق من response.ok بعد الـ fetch."
+            },
+            {
+                "author": "Khaled Fathy",
+                "timestamp": "2025-08-06T06:32:58.853686Z",
+                "content": "fetch لا يرمي خطأ إلا لو فيه مشكلة بالشبكة."
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "author": "Mona Adel",
+        "timestamp": "2025-08-05T20:35:58.853686Z",
+        "content": "ما معنى hoisting في JavaScript؟",
+        "likes": 21,
+        "comments": [
+            {
+                "author": "Mona Adel",
+                "timestamp": "2025-08-04T04:10:58.853686Z",
+                "content": "الدوال أيضًا يتم hoist لها لو كانت function declaration."
+            },
+            {
+                "author": "Mohamed Saber",
+                "timestamp": "2025-08-07T14:14:58.853686Z",
+                "content": "var يتم hoist له لكن let و const لا."
+            },
+            {
+                "author": "Khaled Fathy",
+                "timestamp": "2025-08-07T10:05:58.853686Z",
+                "content": "تعني أن تعريف المتغيرات يتم رفعه لأعلى السكوب."
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "author": "Fatma Adel",
+        "timestamp": "2025-08-05T17:35:58.853686Z",
+        "content": "ما وظيفة useCallback؟",
+        "likes": 16,
+        "comments": [
+            {
+                "author": "Hassan Nabil",
+                "timestamp": "2025-08-04T06:23:58.853686Z",
+                "content": "يمنع إنشاء دالة جديدة في كل render."
+            },
+            {
+                "author": "Salma Hassan",
+                "timestamp": "2025-08-05T08:45:58.853686Z",
+                "content": "مفيد مع المكونات اللي فيها props من نوع دالة."
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "author": "Yara Mostafa",
+        "timestamp": "2025-08-05T14:35:58.853686Z",
+        "content": "هل يمكن استخدام React بدون JSX؟",
+        "likes": 32,
+        "comments": [
+            {
+                "author": "Ali Hamdy",
+                "timestamp": "2025-08-05T06:36:58.853686Z",
+                "content": "لكن JSX بيخلي الكود أوضح وأسهل."
+            },
+            {
+                "author": "Fatma Adel",
+                "timestamp": "2025-08-04T13:54:58.853686Z",
+                "content": "الـ build tools بتحوّل JSX تلقائيًا."
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "author": "Yara Mostafa",
+        "timestamp": "2025-08-05T11:35:58.853686Z",
+        "content": "كيف أنفذ debounce أو throttle في JavaScript؟",
+        "likes": 34,
+        "comments": [
+            {
+                "author": "Laila Tarek",
+                "timestamp": "2025-08-04T07:21:58.853686Z",
+                "content": "مناسب جدًا للأحداث زي scroll أو input."
+            },
+            {
+                "author": "Khaled Fathy",
+                "timestamp": "2025-08-04T12:37:58.853686Z",
+                "content": "استخدم lodash.debounce أو throttle."
+            },
+            {
+                "author": "Khaled Fathy",
+                "timestamp": "2025-08-04T13:13:58.853686Z",
+                "content": "مفيد لتقليل عدد مرات استدعاء الدوال."
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "author": "Fatma Adel",
+        "timestamp": "2025-08-05T08:35:58.853686Z",
+        "content": "ما الفرق بين class component و functional component؟",
+        "likes": 16,
+        "comments": [
+            {
+                "author": "Khaled Fathy",
+                "timestamp": "2025-08-06T19:56:58.853686Z",
+                "content": "الـ functional أبسط وتدعم hooks."
+            },
+            {
+                "author": "Hassan Nabil",
+                "timestamp": "2025-08-04T06:46:58.853686Z",
+                "content": "الـ class كانت الطريقة القديمة."
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "author": "Omar Khaled",
+        "timestamp": "2025-08-05T05:35:58.853686Z",
+        "content": "ما فائدة key في عناصر React؟",
+        "likes": 28,
+        "comments": [
+            {
+                "author": "Ali Hamdy",
+                "timestamp": "2025-08-06T04:48:58.853686Z",
+                "content": "أنصح بقراءة docs الرسمية."
+            },
+            {
+                "author": "Yara Mostafa",
+                "timestamp": "2025-08-06T20:53:58.853686Z",
+                "content": "السؤال متكرر لكن مهم."
+            },
+            {
+                "author": "Ahmed Youssef",
+                "timestamp": "2025-08-07T07:57:58.853686Z",
+                "content": "ممكن مثال عملي؟"
+            },
+            {
+                "author": "Ali Hamdy",
+                "timestamp": "2025-08-05T19:10:58.853686Z",
+                "content": "شكرًا على السؤال المفيد!"
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "author": "Fatma Adel",
+        "timestamp": "2025-08-05T02:35:58.853686Z",
+        "content": "هل لازم أستخدم ESLint في مشاريعي؟",
+        "likes": 11,
+        "comments": [
+            {
+                "author": "Khaled Fathy",
+                "timestamp": "2025-08-06T15:13:58.853686Z",
+                "content": "نعم، يساعد على كتابة كود منظم وخالي من الأخطاء."
+            },
+            {
+                "author": "Khaled Fathy",
+                "timestamp": "2025-08-05T01:44:58.853686Z",
+                "content": "يساعد الفريق يلتزم بقواعد واحدة."
+            },
+            {
+                "author": "Nour Gamal",
+                "timestamp": "2025-08-07T07:17:58.853686Z",
+                "content": "ينبهك للمشاكل المحتملة أثناء الكتابة."
+            }
+        ]
+    },
+    {
+        "id": 21,
+        "author": "Ali Hamdy",
+        "timestamp": "2025-08-04T23:35:58.853686Z",
+        "content": "ما الفرق بين undefined و null؟",
+        "likes": 31,
+        "comments": [
+            {
+                "author": "Omar Khaled",
+                "timestamp": "2025-08-06T05:51:58.853686Z",
+                "content": "undefined يعني لم يتم التعيين، null يعني لا قيمة."
+            },
+            {
+                "author": "Fatma Adel",
+                "timestamp": "2025-08-05T17:14:58.853686Z",
+                "content": "undefined يحصل تلقائيًا، null يتم تعيينه يدويًا."
+            },
+            {
+                "author": "Mona Adel",
+                "timestamp": "2025-08-05T18:37:58.853686Z",
+                "content": "الفرق مهم عند التعامل مع البيانات."
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "author": "Ahmed Youssef",
+        "timestamp": "2025-08-04T20:35:58.853686Z",
+        "content": "هل لازم أستخدم Webpack مع React؟",
+        "likes": 38,
+        "comments": [
+            {
+                "author": "Laila Tarek",
+                "timestamp": "2025-08-05T01:44:58.853686Z",
+                "content": "مش ضروري حاليًا مع أدوات زي Vite أو CRA."
+            },
+            {
+                "author": "Mohamed Saber",
+                "timestamp": "2025-08-07T02:48:58.853686Z",
+                "content": "Webpack قوي لكن معقد شوية."
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "author": "Fatma Adel",
+        "timestamp": "2025-08-04T17:35:58.853686Z",
+        "content": "ما الفرق بين cookies و localStorage؟",
+        "likes": 15,
+        "comments": [
+            {
+                "author": "Salma Hassan",
+                "timestamp": "2025-08-06T10:00:58.853686Z",
+                "content": "cookies تستخدم غالبًا للجلسات."
+            },
+            {
+                "author": "Laila Tarek",
+                "timestamp": "2025-08-05T06:38:58.853686Z",
+                "content": "localStorage أكبر حجمًا وأسرع."
+            },
+            {
+                "author": "Fatma Adel",
+                "timestamp": "2025-08-07T12:00:58.853686Z",
+                "content": "cookies تُرسل مع كل طلب، localStorage لا."
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "author": "Nour Gamal",
+        "timestamp": "2025-08-04T14:35:58.853686Z",
+        "content": "كيف أتعامل مع استجابة خطأ في fetch؟",
+        "likes": 14,
+        "comments": [
+            {
+                "author": "Yara Mostafa",
+                "timestamp": "2025-08-06T17:53:58.853686Z",
+                "content": "المعلومة جديدة عليّ."
+            },
+            {
+                "author": "Khaled Fathy",
+                "timestamp": "2025-08-06T14:22:58.853686Z",
+                "content": "اتفق معك في النقطة دي."
+            },
+            {
+                "author": "Laila Tarek",
+                "timestamp": "2025-08-07T02:38:58.853686Z",
+                "content": "شرح رائع، شكرًا!"
+            },
+            {
+                "author": "Hassan Nabil",
+                "timestamp": "2025-08-04T13:13:58.853686Z",
+                "content": "ممكن مثال عملي؟"
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "author": "Mona Adel",
+        "timestamp": "2025-08-04T11:35:58.853686Z",
+        "content": "ما الفرق بين GET و POST؟",
+        "likes": 42,
+        "comments": [
+            {
+                "author": "Ahmed Youssef",
+                "timestamp": "2025-08-05T02:11:58.853686Z",
+                "content": "GET يتم تخزينه في الـ cache غالبًا."
+            },
+            {
+                "author": "Omar Khaled",
+                "timestamp": "2025-08-05T20:06:58.853686Z",
+                "content": "GET لقراءة البيانات، POST لإرسال البيانات."
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "author": "Yara Mostafa",
+        "timestamp": "2025-08-04T08:35:58.853686Z",
+        "content": "ما المقصود بـ Virtual DOM؟",
+        "likes": 12,
+        "comments": [
+            {
+                "author": "Ahmed Youssef",
+                "timestamp": "2025-08-07T10:55:58.853686Z",
+                "content": "هو نسخة افتراضية من DOM الحقيقي."
+            },
+            {
+                "author": "Mohamed Saber",
+                "timestamp": "2025-08-06T12:49:58.853686Z",
+                "content": "React تقارنه مع النسخة القديمة لتحديد التغييرات."
+            },
+            {
+                "author": "Yara Mostafa",
+                "timestamp": "2025-08-06T17:50:58.853686Z",
+                "content": "يساعد في تحسين الأداء بشكل كبير."
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "author": "Laila Tarek",
+        "timestamp": "2025-08-04T05:35:58.853686Z",
+        "content": "هل يجب تعلم jQuery قبل React؟",
+        "likes": 9,
+        "comments": [
+            {
+                "author": "Khaled Fathy",
+                "timestamp": "2025-08-07T14:02:58.853686Z",
+                "content": "React تستخدم مفهوم مختلف تمامًا."
+            },
+            {
+                "author": "Laila Tarek",
+                "timestamp": "2025-08-06T07:48:58.853686Z",
+                "content": "تعلم JavaScript جيدًا أهم من jQuery."
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "author": "Salma Hassan",
+        "timestamp": "2025-08-04T02:35:58.853686Z",
+        "content": "ما أفضل الطرق لهيكلة ملفات React؟",
+        "likes": 32,
+        "comments": [
+            {
+                "author": "Salma Hassan",
+                "timestamp": "2025-08-07T09:18:58.853686Z",
+                "content": "افصل الـ hooks والـ utils في مجلدات خاصة."
+            },
+            {
+                "author": "Nour Gamal",
+                "timestamp": "2025-08-07T09:08:58.853686Z",
+                "content": "يفضل استخدام structure واضح وسهل الوصول."
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "author": "Ahmed Youssef",
+        "timestamp": "2025-08-03T23:35:58.853686Z",
+        "content": "كيف أستخدم Context API؟",
+        "likes": 31,
+        "comments": [
+            {
+                "author": "Yara Mostafa",
+                "timestamp": "2025-08-05T04:38:58.853686Z",
+                "content": "بديل جيد لـ Redux في المشاريع الصغيرة."
+            },
+            {
+                "author": "Omar Khaled",
+                "timestamp": "2025-08-06T01:31:58.853686Z",
+                "content": "يجب استخدامها بحذر لتفادي إعادة الرندر الزائدة."
+            },
+            {
+                "author": "Laila Tarek",
+                "timestamp": "2025-08-05T09:43:58.853686Z",
+                "content": "تُستخدم لمشاركة الحالة بين المكونات بدون props."
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "author": "Fatma Adel",
+        "timestamp": "2025-08-03T20:35:58.853686Z",
+        "content": "ما الفرق بين useLayoutEffect و useEffect؟",
+        "likes": 6,
+        "comments": [
+            {
+                "author": "Mohamed Saber",
+                "timestamp": "2025-08-04T18:11:58.853686Z",
+                "content": "تأكد من وضع fetch داخل useEffect ولفها بدالة async."
+            },
+            {
+                "author": "Salma Hassan",
+                "timestamp": "2025-08-05T13:30:58.853686Z",
+                "content": "تذكر إضافة dependencies في المصفوفة الثانية من useEffect."
+            }
+        ]
+    }
+]

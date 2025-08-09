@@ -1,0 +1,64 @@
+[
+    {
+        "id": 1,
+        "title": "مسار الواجهة الأمامية( Frontend )",
+        "description": "تعلم تطوير الواجهات الأمامية باستخدام أحدث التقنيات مثل HTML, CSS, JavaScript, React, Tailwind CSS, و Framer Motion.",
+        "levels": [
+            {
+                "level": "مبتدئ",
+                "courses": [
+                    "أساسيات HTML و CSS",
+                    "مقدمة في JavaScript",
+                    "تصميم واجهات باستخدام Tailwind CSS"
+                ]
+            },
+            {
+                "level": "متوسط",
+                "courses": [
+                    "JavaScript المتقدم و DOM",
+                    "بناء تطبيقات تفاعلية باستخدام React",
+                    "إدارة الحالة في React باستخدام Context API و Redux"
+                ]
+            },
+            {
+                "level": "متقدم",
+                "courses": [
+                    "تطوير مواقع متقدمة باستخدام Next.js",
+                    "تحسين الأداء وتجربة المستخدم باستخدام Framer Motion",
+                    "إطلاق مشاريع احترافية وتهيئتها للسوق"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "مسار الواجهة الخلفية ( Backend )",
+        "description": "تعلم بناء الخوادم وقواعد البيانات باستخدام تقنيات حديثة مثل Node.js, Express, و MongoDB.",
+        "levels": [
+            {
+                "level": "مبتدئ",
+                "courses": [
+                    "مقدمة في البرمجة الخلفية",
+                    "أساسيات Node.js و Express",
+                    "مفاهيم قواعد البيانات و SQL"
+                ]
+            },
+            {
+                "level": "متوسط",
+                "courses": [
+                    "بناء API باستخدام RESTful و GraphQL",
+                    "العمل مع قواعد البيانات مثل MongoDB و PostgreSQL",
+                    "إدارة المستخدمين والمصادقة باستخدام JWT و OAuth"
+                ]
+            },
+            {
+                "level": "متقدم",
+                "courses": [
+                    "تحسين الأمان والأداء في التطبيقات الخلفية",
+                    "بناء أنظمة متكاملة مع Microservices و WebSockets",
+                    "نشر وإدارة الخوادم باستخدام Docker و Kubernetes"
+                ]
+            }
+        ]
+    }
+]
