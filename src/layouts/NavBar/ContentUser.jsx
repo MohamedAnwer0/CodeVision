@@ -77,9 +77,11 @@ function ContentUser() {
             />
 
             <motion.ul
-                initial={{ opacity: 0, y: 10 }}
+                initial={{ opacity: 0, y: 10, display: "none" }}
                 animate={
-                    showBoxUser ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                    showBoxUser
+                        ? { opacity: 1, y: 0, display: "block" }
+                        : { opacity: 0, y: 20, display: "none" }
                 }
                 className="absolute w-[200px] left-0 top-[calc(100%+25px)] bg-white text-black border space-y-3 border-gray-300 dark:border-gray-800 rounded-lg dark:text-white dark:bg-gray-900 p-2"
             >
@@ -89,7 +91,7 @@ function ContentUser() {
                 </li>
 
                 <hr className="border-gray-300 dark:border-gray-700" />
-                
+
                 <li
                     onClick={handelSignOut}
                     className="flex items-center space-x-2 font-semibold hover:bg-gray-200 dark:hover:bg-gray-800 p-3 rounded-lg"
