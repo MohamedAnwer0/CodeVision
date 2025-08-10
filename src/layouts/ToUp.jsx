@@ -16,7 +16,7 @@ import { IoChevronUpOutline } from "react-icons/io5";
 // ================================
 // Animation settings
 // ================================
-import { animateOpacity, transitionSettings } from "../../utils/animations";
+import { animateOpacity, transitionSettings } from "../utils/animations";
 
 function ToUp() {
     const [showButtonToUp, setShowButtonToUp] = useState(false);

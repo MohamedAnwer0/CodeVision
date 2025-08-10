@@ -21,7 +21,7 @@ import { FaGithub } from "react-icons/fa";
 // ================================
 // Animation settings
 // ================================
-import { animateOpacity, transitionSettings } from "../../utils/animations";
+import { animateOpacity, transitionSettings } from "../utils/animations";
 
 // ================================
 //  List Links
