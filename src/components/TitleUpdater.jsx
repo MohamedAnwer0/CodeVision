@@ -1,10 +1,17 @@
-// libraries
+// ================================
+// Importing required libraries
+// ================================
 import PropTypes from "prop-types";
 
-// hooks
+// ================================
+// Importing Hooks
+// ================================
 import { useEffect } from "react";
 import { useLocation } from "react-router";
 
+// ================================
+// TitleUpdater  Component
+// ================================
 const titles = {
     "/": "كودفيجن - الرئيسية",
     "/tracks": "كودفيجن - المسارات التعليمية",
@@ -26,6 +33,9 @@ function TitleUpdater({ titleParam = "صفحة غير معروقة" }) {
     return null;
 }
 
+// ================================
+//  PropTypes Validation
+// ================================
 TitleUpdater.PropTypes = {
     titleParam: PropTypes.string,
 };

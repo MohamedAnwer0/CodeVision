@@ -1,7 +1,12 @@
-// libraries
+// ================================
+// Importing required libraries
+// ================================
 import PropTypes from "prop-types";
 import { Link } from "react-router";
 
+// ================================
+// Logo  Component
+// ================================
 function Logo({ className }) {
     return (
         <Link
@@ -12,6 +17,10 @@ function Logo({ className }) {
         </Link>
     );
 }
+
+// ================================
+//  PropTypes Validation
+// ================================
 Logo.propTypes = {
     className: PropTypes.string,
 };

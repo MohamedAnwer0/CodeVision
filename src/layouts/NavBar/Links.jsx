@@ -1,4 +1,6 @@
-// routeing
+// ================================
+// Importing Routeing
+// ================================
 import { Link, useLocation } from "react-router";
 const listLinks = [
     {
@@ -38,6 +40,9 @@ const listLinks = [
     },
 ];
 
+// ================================
+// Links  Component
+// ================================
 function Links() {
     const { pathname } = useLocation();
 

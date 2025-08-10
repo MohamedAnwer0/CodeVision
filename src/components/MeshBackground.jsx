@@ -1,7 +1,12 @@
-// libraries
+// ================================
+// Importing required libraries
+// ================================
 import PropTypes from "prop-types";
 import { memo } from "react";
 
+// ================================
+// MeshBackground  Component
+// ================================
 function MeshBackground({ numberMeshes, countColumns, size, className }) {
     const lists = Array.from({ length: numberMeshes }, (_, index) => index + 1);
     const listsNoBorderLeft = [];
@@ -31,6 +36,9 @@ function MeshBackground({ numberMeshes, countColumns, size, className }) {
     );
 }
 
+// ================================
+//  PropTypes Validation
+// ================================
 MeshBackground.propTypes = {
     numberMeshes: PropTypes.number,
     countColumns: PropTypes.number,

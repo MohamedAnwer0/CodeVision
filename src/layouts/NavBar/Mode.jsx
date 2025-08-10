@@ -1,8 +1,17 @@
-// hooks
+// ================================
+// Importing Hooks
+// ================================
 import { useState } from "react";
-// icons
+
+// ================================
+// Importing Hooks
+// ================================
 import { CiDark } from "react-icons/ci";
 import { IoSunnyOutline } from "react-icons/io5";
+
+// ================================
+// Mode  Component
+// ================================
 function Mode() {
     const [mode, setMode] = useState(localStorage.getItem("mode") || "light");
     const handelMode = (mode) => {
@@ -23,10 +32,7 @@ function Mode() {
             className="text-black cursor-pointer dark:text-white transition-colors"
         >
             {mode == "dark" ? (
-                <IoSunnyOutline
-                
-                    className="lg:text-[35px] text-[25px] pointer-events-none"
-                />
+                <IoSunnyOutline className="lg:text-[35px] text-[25px] pointer-events-none" />
             ) : (
                 <CiDark className="lg:text-[35px] text-[25px] pointer-events-none" />
             )}

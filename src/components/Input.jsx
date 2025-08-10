@@ -1,8 +1,22 @@
+// ================================
+// Importing required libraries
+// ================================
 import PropTypes from "prop-types";
+
+// ================================
+// Importing Hooks
+// ================================
 import { useState } from "react";
-// icons
+
+// ================================
+// Importing Icons
+// ================================
 import { FaRegEye } from "react-icons/fa";
 import { FaRegEyeSlash } from "react-icons/fa";
+
+// ================================
+// Input  Component
+// ================================
 function Input({
     name,
     label,
@@ -15,6 +29,7 @@ function Input({
     errorMessage,
 }) {
     const [typeInput, setTypeInput] = useState(type);
+
     return (
         <div className="space-y-2">
             <label
@@ -23,6 +38,7 @@ function Input({
             >
                 {label}
             </label>
+
             <div className="relative ">
                 <input
                     {...register}
@@ -38,11 +54,13 @@ function Input({
                             : "border-gray-400 focus:border-blue-500"
                     }`}
                 />
+
                 {icon && (
                     <div className="absolute text-gray-700 dark:text-gray-300 -translate-y-1/2 top-1/2 right-3">
                         {icon}
                     </div>
                 )}
+
                 {type == "password" && (
                     <div className="absolute text-gray-700 dark:text-gray-300 -translate-y-1/2 cursor-pointer top-1/2 left-3">
                         {typeInput == "password" ? (
@@ -59,12 +77,17 @@ function Input({
                     </div>
                 )}
             </div>
+
             {errorMessage && (
                 <span className="block text-red-500">{errorMessage}</span>
             )}
         </div>
     );
 }
+
+// ================================
+//  PropTypes Validation
+// ================================
 Input.propTypes = {
     name: PropTypes.string,
     label: PropTypes.string,

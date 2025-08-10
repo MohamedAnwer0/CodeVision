@@ -1,6 +1,11 @@
-// libraries
+// ================================
+// Importing required libraries
+// ================================
 import PropTypes from "prop-types";
 
+// ================================
+// ColorBackground  Component
+// ================================
 function ColorBackground({ position, size = 700, className }) {
     return (
         <div
@@ -10,6 +15,9 @@ function ColorBackground({ position, size = 700, className }) {
     );
 }
 
+// ================================
+//  PropTypes Validation
+// ================================
 ColorBackground.propTypes = {
     position: PropTypes.string,
     size: PropTypes.number,

@@ -1,10 +1,16 @@
-// hooks
+// ================================
+// Importing Hooks
+// ================================
 import { useEffect, useState } from "react";
 
+// ================================
+// MouseMotionEffect  Component
+// ================================
 function MouseMotionEffect() {
     const [offsetX, setOffsetX] = useState(0);
     const [offsetY, setOffsetY] = useState(0);
     const [effectClick, setEffectClick] = useState(false);
+
     const listClicks = ["BUTTON", "A"];
     useEffect(() => {
         window.onmousemove = function (e) {
@@ -21,6 +27,7 @@ function MouseMotionEffect() {
             else setEffectClick(false);
         };
     });
+
     return (
         <>
             <div
@@ -32,6 +39,7 @@ function MouseMotionEffect() {
                     top: offsetY - 100,
                 }}
             ></div>
+            
             <div
                 className={`fixed w-[10px] h-[10px] bg-blue-500 rounded-full duration-200 ease-linear z-50 lg:block hidden pointer-events-none ${
                     effectClick

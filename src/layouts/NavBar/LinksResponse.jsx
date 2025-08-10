@@ -1,8 +1,13 @@
-// libraries
+// ================================
+// Importing required libraries
+// ================================
 import PropTypes from "prop-types";
 import { motion } from "motion/react";
 import { Link } from "react-router";
-// hooks
+
+// ================================
+// Importing Hooks
+// ================================
 import { useSelector } from "react-redux";
 
 const listLinks = [
@@ -42,7 +47,9 @@ const listLinks = [
         to: "/codeEditor",
     },
 ];
-// animations
+// ================================
+// Animation
+// ================================
 const animate = {
     show: {
         y: "0px",
@@ -53,6 +60,10 @@ const animate = {
         opacity: 0,
     },
 };
+
+// ================================
+// LinksResponse  Component
+// ================================
 function LinksResponse({ show, onClick }) {
     const { isAuthenticated } = useSelector((state) => state.Auth);
 
@@ -100,6 +111,10 @@ function LinksResponse({ show, onClick }) {
         </motion.div>
     );
 }
+
+// ================================
+//  PropTypes Validation
+// ================================
 LinksResponse.propTypes = {
     show: PropTypes.bool,
 };

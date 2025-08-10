@@ -1,16 +1,23 @@
-// libraries
+// ================================
+// Importing required libraries
+// ================================
 import { motion } from "motion/react";
-// hooks
+
+// ================================
+// Importing Hooks
+// ================================
 import { useEffect, useState } from "react";
-// icons
+
+// ================================
+// Importing Icons
+// ================================
 import { IoChevronUpOutline } from "react-icons/io5";
-// animations
-const motionInView = {
-    hidden: { opacity: 0 },
-    show: {
-        opacity: 1,
-    },
-};
+
+// ================================
+// Animation settings
+// ================================
+import { animateOpacity, transitionSettings } from "../../utils/animations";
+
 function ToUp() {
     const [showButtonToUp, setShowButtonToUp] = useState(false);
     const toUp = () => {
@@ -26,13 +33,18 @@ function ToUp() {
         <motion.div
             initial={"hidden"}
             animate={showButtonToUp ? "show" : "hidden"}
-            variants={motionInView}
+            variants={animateOpacity}
+            transition={transitionSettings}
             onClick={toUp}
             className={`fixed bottom-5 right-5 z-50 bg-blue-600 p-2 rounded-full cursor-pointer hover:bg-blue-700 transition-colors ${
                 showButtonToUp ? "pointer-events-auto" : "pointer-events-none"
             }`}
         >
-            <IoChevronUpOutline color="white" fontSize={25} className="pointer-events-none" />
+            <IoChevronUpOutline
+                color="white"
+                fontSize={25}
+                className="pointer-events-none"
+            />
         </motion.div>
     );
 }

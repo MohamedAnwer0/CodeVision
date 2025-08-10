@@ -1,21 +1,40 @@
-// libraries
+// ================================
+// Importing required libraries
+// ================================
 import { motion } from "motion/react";
 import Cookie from "js-cookie";
 import { googleLogout } from "@react-oauth/google";
-// hooks
+
+// ================================
+// Importing Hooks
+// ================================
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useRef, useState } from "react";
-// components
+
+// ================================
+// Importing Components
+// ================================
 import { ButtonBasc, ButtonBorder } from "../../components/Buttons";
-// actions redux
+
+// ================================
+// Importing Actions Redux
+// ================================
 import { signOut } from "../../Redux/Slice/Auth";
-// icons
+
+// ================================
+// Importing Icons
+// ================================
 import { GoSignOut } from "react-icons/go";
 import { FaRegUser } from "react-icons/fa6";
+
+// ================================
+// ContentUser  Component
+// ================================
 function ContentUser() {
     const [showBoxUser, setShowBoxUser] = useState(false);
     const { isAuthenticated, user } = useSelector((state) => state.Auth);
     const dispatch = useDispatch();
+
     // function handel hidden box user on click on scrren
     const boxUser = useRef(null);
     useEffect(() => {
@@ -32,6 +51,7 @@ function ContentUser() {
         dispatch(signOut());
         googleLogout();
     };
+
     if (!isAuthenticated)
         return (
             <div className=" items-center space-x-5 hidden lg:flex">
@@ -39,6 +59,7 @@ function ContentUser() {
                 <ButtonBorder title={"أنشاء حساب"} link path="/signup" />
             </div>
         );
+
     return (
         <div
             ref={boxUser}
@@ -48,11 +69,13 @@ function ContentUser() {
             <strong className="lg:block hidden pointer-events-none select-none text-black dark:text-white">
                 {user.firstName || "اسم غير معروف"}
             </strong>
+
             <img
                 src={user.avatar}
                 className="w-[35px] h-[35px] object-cover rounded-full pointer-events-none"
                 alt={user.fullName}
             />
+
             <motion.ul
                 initial={{ opacity: 0, y: 10 }}
                 animate={
@@ -64,7 +87,9 @@ function ContentUser() {
                     <FaRegUser />
                     <span>ملفي الشخصي</span>
                 </li>
+
                 <hr className="border-gray-300 dark:border-gray-700" />
+                
                 <li
                     onClick={handelSignOut}
                     className="flex items-center space-x-2 font-semibold hover:bg-gray-200 dark:hover:bg-gray-800 p-3 rounded-lg"

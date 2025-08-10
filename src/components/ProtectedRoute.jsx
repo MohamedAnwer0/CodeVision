@@ -1,10 +1,18 @@
-// libraries
+// ================================
+// Importing required libraries
+// ================================
 import PropTypes from "prop-types";
-// hooks
+
+// ================================
+// Importing Hooks
+// ================================
 import { useNavigate } from "react-router";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
 
+// ================================
+// ProtectedRoute  Component
+// ================================
 function ProtectedRoute({ children }) {
     const navigate = useNavigate();
     const isAuthenticated = useSelector((state) => state.Auth.isAuthenticated);
@@ -16,6 +24,9 @@ function ProtectedRoute({ children }) {
     return children;
 }
 
+// ================================
+//  PropTypes Validation
+// ================================
 ProtectedRoute.propTypes = {
     children: PropTypes.node,
 };

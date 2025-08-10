@@ -1,24 +1,31 @@
-// libraries
+// ================================
+// Importing required libraries
+// ================================
 import { Link } from "react-router";
 import { motion } from "motion/react";
-// components
+
+// ================================
+// Importing Components
+// ================================
 import Logo from "../components/Logo";
-import { ButtonBasc } from "../components/Buttons";
-// icons
+
+// ================================
+// Importing Icons
+// ================================
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-// animations
-const motionInView = {
-    hidden: { opacity: 0, filter: "blur(20px)" },
-    show: {
-        opacity: 1,
-        filter: "blur(0px)",
-    },
-};
-// list links
+
+// ================================
+// Animation settings
+// ================================
+import { animateOpacity, transitionSettings } from "../../utils/animations";
+
+// ================================
+//  List Links
+// ================================
 const listLinks = [
     {
         id: 1,
@@ -61,8 +68,8 @@ function Footer() {
         <motion.footer
             initial={"hidden"}
             whileInView={"show"}
-            variants={motionInView}
-            transition={{ duration: 1 }}
+            variants={animateOpacity}
+            transition={transitionSettings}
             className="py-5 my-10 space-y-10 text-center bg-white dark:bg-gray-900 rounded-xl transition-colors"
         >
             <div className="col-span-2 space-y-1">
